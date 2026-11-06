@@ -1,0 +1,20 @@
+{"id": "h01", "text": "vehicle secured on top rack, departing now", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "h02", "text": "hauling it now, ETA sat afternoon", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "h03", "text": "flat on the tractor, roadside service 90 min out", "event": "delayed", "eta_hours": 2, "needs_human": false}
+{"id": "h04", "text": "construction backup on 75, crawling", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "h05", "text": "handed keys to the sales manager, all set", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "h06", "text": "dealer accepted the unit", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "h07", "text": "mirror cracked, not sure if it happened before pickup", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "h08", "text": "the address you gave me is a house not a dealership", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "h09", "text": "running late, maybe 4 hours", "event": "delayed", "eta_hours": 4, "needs_human": false}
+{"id": "h10", "text": "on I-10 near El Paso", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "h11", "text": "gonna be delivered in like 20 min", "event": "moving", "eta_hours": 1, "needs_human": false}
+{"id": "h12", "text": "no problems so far", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "h13", "text": "loaded and rolling", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "h14", "text": "drop complete, BOL signed", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "h15", "text": "had to reroute, adds about 3 hrs", "event": "delayed", "eta_hours": 3, "needs_human": false}
+{"id": "h16", "text": "customer not answering phone, I'm at the gate", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "h17", "text": "ok will do", "event": "none", "eta_hours": null, "needs_human": false}
+{"id": "h18", "text": "loading now", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "h19", "text": "wreck ahead, we're stopped", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "h20", "text": "unloaded at the dealer, no damage", "event": "delivered", "eta_hours": null, "needs_human": false}

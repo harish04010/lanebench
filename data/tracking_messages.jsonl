@@ -1,0 +1,48 @@
+{"id": "t01", "text": "loaded the GLE at the dealer, heading out", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "t02", "text": "picked up, vin matches. rolling out of Dallas now", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "t03", "text": "got it on the truck", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "t04", "text": "car is loaded and strapped, eta thursday", "event": "picked_up", "eta_hours": null, "needs_human": false}
+{"id": "t05", "text": "on schedule", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t06", "text": "making good time, should be there in about 6 hrs", "event": "moving", "eta_hours": 6, "needs_human": false}
+{"id": "t07", "text": "fueling up then back on the road", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t08", "text": "all good, unit secured", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t09", "text": "passing through Amarillo, no issues", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t10", "text": "not delayed, traffic cleared up", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t11", "text": "about 2 hours out from the dealership", "event": "moving", "eta_hours": 2, "needs_human": false}
+{"id": "t12", "text": "will be delivered tomorrow morning", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t13", "text": "weather on I-40, sitting tight a few hrs", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "t14", "text": "dot inspection at the scale, gonna be late. eta tmrw", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "t15", "text": "blew a tire on the trailer, shop says couple hours", "event": "delayed", "eta_hours": 2, "needs_human": false}
+{"id": "t16", "text": "other dropoff ran long, behind schedule now", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "t17", "text": "snow in the pass, chains required. gonna lose a day", "event": "delayed", "eta_hours": 24, "needs_human": false}
+{"id": "t18", "text": "hit my hours, have to take my 10 before I can finish", "event": "delayed", "eta_hours": 10, "needs_human": false}
+{"id": "t19", "text": "can't pick up till monday, dealer lot is closed", "event": "delayed", "eta_hours": null, "needs_human": true}
+{"id": "t20", "text": "running about 3 hrs behind", "event": "delayed", "eta_hours": 3, "needs_human": false}
+{"id": "t21", "text": "truck broke down outside Tulsa, waiting on a mechanic", "event": "delayed", "eta_hours": null, "needs_human": true}
+{"id": "t22", "text": "accident on the highway, stuck in traffic for a while", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "t23", "text": "delivered, dealer signed the BOL", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "t24", "text": "dropped off, no damage, pics uploaded", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "t25", "text": "unit delivered. signed + photos sent", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "t26", "text": "left it with the porter at service, keys in the drop box", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "t27", "text": "done. car is on their lot", "event": "delivered", "eta_hours": null, "needs_human": false}
+{"id": "t28", "text": "small scratch on the rear bumper, noted it on the BOL at pickup", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t29", "text": "dealer won't sign, says there's a chip in the windshield", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t30", "text": "battery is dead, can't get it off the trailer", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t31", "text": "nobody at the dealership to receive, what do you want me to do", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t32", "text": "vin on the paperwork doesnt match the car", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t33", "text": "customer says this isn't the right trim, refusing delivery", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t34", "text": "low clearance, the front lip scraped loading. sending pics", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t35", "text": "", "event": "none", "eta_hours": null, "needs_human": false}
+{"id": "t36", "text": "?", "event": "none", "eta_hours": null, "needs_human": false}
+{"id": "t37", "text": "call me", "event": "none", "eta_hours": null, "needs_human": true}
+{"id": "t38", "text": "ok", "event": "none", "eta_hours": null, "needs_human": false}
+{"id": "t39", "text": "thx", "event": "none", "eta_hours": null, "needs_human": false}
+{"id": "t40", "text": "no damage, all good, back on the road", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t41", "text": "picked up the escalade but the dealer was late so we're behind now", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "t42", "text": "should've delivered by now but the gate code doesn't work", "event": "issue", "eta_hours": null, "needs_human": true}
+{"id": "t43", "text": "eta 45 min", "event": "moving", "eta_hours": 1, "needs_human": false}
+{"id": "t44", "text": "about a day and a half out", "event": "moving", "eta_hours": 36, "needs_human": false}
+{"id": "t45", "text": "not loaded yet, waiting on the dealer to bring it around", "event": "delayed", "eta_hours": null, "needs_human": false}
+{"id": "t46", "text": "delivered the first two, yours is next. 30 min", "event": "moving", "eta_hours": 1, "needs_human": false}
+{"id": "t47", "text": "roads are clear, no delays expected", "event": "moving", "eta_hours": null, "needs_human": false}
+{"id": "t48", "text": "rolled it off, dealer has it. no issues", "event": "delivered", "eta_hours": null, "needs_human": false}

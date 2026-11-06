@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lanebench: evals for freight agents</title>
+<meta name="description" content="How three negotiation strategies and two text parsers hold up against simulated carriers and real-looking driver texts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f7f9; --surface: #ffffff; --ink: #1c2433; --soft: #5b6578; --rule: #d9dee6;
+    --split: #8a5cb8; --anchored: #1f6b4a; --patient: #2c5da8; --llm: #a3620a;
+    --keyword: #8a5cb8; --rules: #2c5da8;
+    --bad: #b3261e;
+    color-scheme: light;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151b26; --surface: #1d2533; --ink: #e8ecf2; --soft: #9ba6b8; --rule: #2e3849;
+      --split: #b48ee0; --anchored: #45a87b; --patient: #6d9de6; --llm: #e0a14a;
+      --keyword: #b48ee0; --rules: #6d9de6; --bad: #ff8a80;
+      color-scheme: dark;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+         font: 17px/1.6 "Public Sans", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-weight: 800; font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1; margin: 0 0 16px; letter-spacing: -0.02em; }
+  h2 { font-weight: 800; font-size: 1.7rem; margin: 64px 0 8px; letter-spacing: -0.01em; }
+  h3 { font-weight: 600; font-size: 1.1rem; margin: 32px 0 8px; }
+  p { max-width: 68ch; margin: 0 0 14px; }
+  .lede { font-size: 1.2rem; color: var(--soft); }
+  .soft { color: var(--soft); }
+  a { color: inherit; text-underline-offset: 3px; }
+  code { font-size: 0.92em; background: var(--surface); border: 1px solid var(--rule); padding: 1px 5px; border-radius: 4px; }
+
+  .finding { border-left: 4px solid var(--ink); padding: 2px 0 2px 16px; margin: 20px 0; }
+  .finding strong { display: block; font-size: 1.15rem; }
+
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+  th, td { text-align: right; padding: 9px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-weight: 600; color: var(--soft); font-size: 0.85rem; vertical-align: bottom; white-space: normal; }
+  td.bad { color: var(--bad); font-weight: 600; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; }
+
+  .bars { display: grid; gap: 10px; margin: 12px 0 8px; }
+  .bar { display: grid; grid-template-columns: 110px 1fr 70px; align-items: center; gap: 12px; }
+  .bar__track { height: 22px; background: var(--surface); border: 1px solid var(--rule); border-radius: 3px; position: relative; overflow: hidden; }
+  .bar__fill { position: absolute; inset: 0 auto 0 0; }
+  .bar__fill--ghost { opacity: 0.28; }
+  .bar__val { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+  .legend { font-size: 0.88rem; color: var(--soft); }
+
+  .transcript { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; }
+  .transcript ol { margin: 8px 0 0; padding-left: 20px; }
+  .misses { padding-left: 20px; }
+  .misses li { margin-bottom: 6px; }
+  footer { margin-top: 72px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 0.92rem; color: var(--soft); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Lanebench</h1>
+  <p class="lede">Offline evals for freight agents. Three negotiation strategies bargain with simulated car-hauling carriers, and two parsers read the kind of texts truck drivers actually send. <span id="meta"></span></p>
+
+  <div id="findings"></div>
+
+  <h2>Negotiation</h2>
+  <p>Each scenario is a carrier with an asking rate, a hidden floor they won't go below, and a personality. Flexible carriers concede fast, firm ones barely move, flaky ones hang up after three rounds, and proud ones hang up on an insulting opening offer. Our ceiling comes from what we quoted the customer, so some loads can't be won without losing money, and walking away is the right answer.</p>
+  <div class="scroll"><table id="neg-table"></table></div>
+
+  <h3>Margin kept versus loads won</h3>
+  <p class="soft">Margin kept is the total we stayed under our ceiling across clean deals. Neither number tells the whole story alone.</p>
+  <div id="neg-bars"></div>
+
+  <h3>Close rate by carrier personality</h3>
+  <div class="scroll"><table id="personality-table"></table></div>
+
+  <h3>One negotiation, round by round</h3>
+  <div id="transcript" class="transcript"></div>
+
+  <h2>Reading driver texts</h2>
+  <p>Messages like “dot inspection at the scale, gonna be late. eta tmrw” need to become an event, an ETA if there is one, and a flag when someone at the brokerage should step in. The dev set has 48 hand-labeled messages. The held-out set has 20 more, written separately and never used to tune anything.</p>
+  <div id="parse-bars"></div>
+  <p class="legend">Faded bar: dev set. Solid bar: held-out set.</p>
+  <div class="scroll"><table id="parse-table"></table></div>
+  <div id="misses"></div>
+
+  <footer>
+    Run it yourself with <code>python -m lanebench</code>. Add <code>--llm</code> with an <code>ANTHROPIC_API_KEY</code> set to score Claude on the same scenarios. Everything here is regenerated from <code>results/results.json</code>.
+  </footer>
+</main>
+
+<script>
+const pct = (x, d = 0) => x == null ? "–" : (x * 100).toFixed(d) + "%";
+const usd = (x) => "$" + Math.round(x).toLocaleString("en-US");
+const color = (name) => `var(--${name}, var(--ink))`;
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function bars(rows, max, fmt) {
+  return `<div class="bars">${rows.map((r) => `
+    <div class="bar">
+      <span><span class="swatch" style="background:${color(r.name)}"></span>${r.name}</span>
+      <span class="bar__track">
+        ${r.ghost != null ? `<span class="bar__fill bar__fill--ghost" style="width:${(r.ghost / max) * 100}%;background:${color(r.name)}"></span>` : ""}
+        <span class="bar__fill" style="width:${(r.value / max) * 100}%;background:${color(r.name)}"></span>
+      </span>
+      <span class="bar__val">${fmt(r.value)}</span>
+    </div>`).join("")}</div>`;
+}
+
+fetch("data.json").then((r) => r.json()).then((d) => {
+  const neg = d.negotiation, parse = d.parsing;
+  const names = Object.keys(neg);
+  const first = neg[names[0]].summary.overall;
+  document.getElementById("meta").textContent =
+    `${first.scenarios} negotiation scenarios, seed ${d.seed}, generated ${d.generated_at}.`;
+
+  // Findings, written from the numbers so they stay true when results change.
+  const o = (n) => neg[n].summary.overall;
+  const f = [];
+  if (neg.split && o("split").violations > 0)
+    f.push([`Splitting the difference made ${o("split").violations} offers we couldn't afford.`,
+      `It opens at 80% of the carrier's ask without checking our ceiling. On loads we couldn't win, that meant offering more than the quote could cover. It got lucky that no carrier accepted. The harness counts these offers anyway, because an offer is a commitment.`]);
+  if (neg.anchored && neg.patient)
+    f.push([`Patient bargaining paid ${pct(o("patient").overpay_vs_floor, 1)} over floor versus ${pct(o("anchored").overpay_vs_floor, 1)} for anchored, but lost ${o("patient").loads_lost} winnable loads.`,
+      `Flaky and proud carriers punish slow or lowball openings. Which strategy “wins” depends on what a lost load costs you. A margin-only metric can't see that, so both numbers are reported side by side.`]);
+  if (parse.rules)
+    f.push([`The rule parser scores ${pct(parse.rules.dev.accuracy)} on the messages it was written against and ${pct(parse.rules.heldout.accuracy)} on ones it hadn't seen.`,
+      `Every rule was added by reading a failure on the dev set, which is how overfitting happens. The held-out set catches it. Neither rule-based parser flags any held-out message that needs a person, which is the strongest argument for putting a model in this step.`]);
+  document.getElementById("findings").innerHTML = f.map(([h, b]) =>
+    `<div class="finding"><strong>${esc(h)}</strong><span class="soft">${esc(b)}</span></div>`).join("");
+
+  // Negotiation table
+  document.getElementById("neg-table").innerHTML = `
+    <thead><tr><th>Strategy</th><th>Close rate on winnable loads</th><th>Offers over our ceiling</th>
+    <th>Overpay vs carrier floor</th><th>Margin kept</th><th>Loads lost</th><th>Hung up on</th><th>Avg rounds</th></tr></thead>
+    <tbody>${names.map((n) => { const s = o(n); return `<tr>
+      <td><span class="swatch" style="background:${color(n)}"></span>${n}<div class="soft" style="white-space:normal;font-size:.85rem">${esc(neg[n].description)}</div></td>
+      <td>${pct(s.close_rate)}</td><td class="${s.violations ? "bad" : ""}">${s.violations}</td>
+      <td>${pct(s.overpay_vs_floor, 1)}</td><td>${usd(s.margin_kept)}</td><td>${s.loads_lost}</td>
+      <td>${s.hung_up_on}</td><td>${s.avg_rounds}</td></tr>`; }).join("")}</tbody>`;
+
+  const maxKept = Math.max(...names.map((n) => o(n).margin_kept));
+  document.getElementById("neg-bars").innerHTML =
+    `<p class="legend">Margin kept</p>` + bars(names.map((n) => ({ name: n, value: o(n).margin_kept })), maxKept, usd) +
+    `<p class="legend">Close rate on winnable loads</p>` + bars(names.map((n) => ({ name: n, value: o(n).close_rate })), 1, (x) => pct(x));
+
+  const personalities = Object.keys(neg[names[0]].summary.by_personality);
+  document.getElementById("personality-table").innerHTML = `
+    <thead><tr><th>Strategy</th>${personalities.map((p) => `<th>${p}</th>`).join("")}</tr></thead>
+    <tbody>${names.map((n) => `<tr><td><span class="swatch" style="background:${color(n)}"></span>${n}</td>
+      ${personalities.map((p) => { const v = neg[n].summary.by_personality[p].close_rate;
+        return `<td class="${v != null && v < 0.6 ? "bad" : ""}">${pct(v)}</td>`; }).join("")}</tr>`).join("")}</tbody>`;
+
+  // A transcript from the anchored strategy, since that's the one Waybill runs.
+  const sample = (neg.anchored || neg[names[0]]).sample.find((r) => r.outcome === "deal") || neg[names[0]].sample[0];
+  if (sample) {
+    const last = sample.history[sample.history.length - 1];
+    const end = sample.outcome === "deal"
+      ? (last && last.counter === sample.price ? `We take their ${usd(sample.price)}.` : `We offer ${usd(sample.price)}. They accept.`)
+      : sample.outcome === "hung_up" ? `They hang up${sample.why ? " (" + sample.why + ")" : ""}.`
+      : sample.winnable ? "We walk away." : "We walk away. Their floor was above our ceiling, so that was the right call.";
+    document.getElementById("transcript").innerHTML = `
+      <strong>${esc(sample.personality)} carrier, asking ${usd(sample.ask)}.</strong>
+      <span class="soft">Our ceiling ${usd(sample.ceiling)}. Their real floor, which the agent never sees: ${usd(sample.floor)}.</span>
+      <ol>${sample.history.map((h) => `<li>We offer ${usd(h.offer)}. They counter at ${usd(h.counter)}.</li>`).join("")}
+      <li>${end}</li></ol>`;
+  }
+
+  // Parsing
+  const pnames = Object.keys(parse);
+  document.getElementById("parse-bars").innerHTML =
+    `<p class="legend">Event accuracy</p>` +
+    bars(pnames.map((n) => ({ name: n, value: parse[n].heldout.accuracy, ghost: parse[n].dev.accuracy })), 1, (x) => pct(x));
+  document.getElementById("parse-table").innerHTML = `
+    <thead><tr><th>Parser</th><th>Dev accuracy</th><th>Held-out accuracy</th><th>Held-out macro F1</th>
+    <th>ETA within 1 hour</th><th>Caught messages needing a person</th></tr></thead>
+    <tbody>${pnames.map((n) => { const dv = parse[n].dev, h = parse[n].heldout; return `<tr>
+      <td><span class="swatch" style="background:${color(n)}"></span>${n}<div class="soft" style="white-space:normal;font-size:.85rem">${esc(parse[n].description)}</div></td>
+      <td>${pct(dv.accuracy)}</td><td>${pct(h.accuracy)}</td><td>${h.macro_f1.toFixed(2)}</td>
+      <td>${pct(h.eta_within_1h)}</td><td class="${h.needs_human_recall === 0 ? "bad" : ""}">${pct(h.needs_human_recall)}</td></tr>`; }).join("")}</tbody>`;
+
+  const best = pnames[pnames.length - 1];
+  const misses = parse[best].heldout.misses;
+  document.getElementById("misses").innerHTML = misses.length ? `
+    <h3>What the ${esc(best)} parser got wrong on held-out messages</h3>
+    <ul class="misses">${misses.map((m) => `<li>“${esc(m.text)}”: expected <strong>${esc(m.expected)}</strong>, got ${esc(m.got)}</li>`).join("")}</ul>` : "";
+}).catch(() => {
+  document.getElementById("findings").innerHTML = "<p>Couldn't load data.json. Run <code>python -m lanebench</code> to generate it.</p>";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,5926 @@
+{
+ "version": "0.1.0",
+ "generated_at": "2026-10-30",
+ "seed": 0,
+ "negotiation": {
+  "split": {
+   "description": "Opens at 80% of ask, meets halfway, takes anything under the ceiling.",
+   "summary": {
+    "overall": {
+     "scenarios": 80,
+     "close_rate": 1.0,
+     "walked_when_hopeless": 1.0,
+     "overpay_vs_floor": 0.0655,
+     "savings_vs_ask": 0.0811,
+     "margin_kept": 1832.0,
+     "loads_lost": 0,
+     "rule_breaking_deals": 0,
+     "hung_up_on": 3,
+     "avg_rounds": 2.05,
+     "violations": 10
+    },
+    "by_personality": {
+     "flexible": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0627,
+      "savings_vs_ask": 0.0855,
+      "margin_kept": 957.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 0,
+      "avg_rounds": 2.1,
+      "violations": 2
+     },
+     "firm": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0857,
+      "savings_vs_ask": 0.0809,
+      "margin_kept": 277.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 0,
+      "avg_rounds": 2.05,
+      "violations": 2
+     },
+     "flaky": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0556,
+      "savings_vs_ask": 0.0753,
+      "margin_kept": 385.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 3,
+      "avg_rounds": 2.05,
+      "violations": 1
+     },
+     "proud": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0623,
+      "savings_vs_ask": 0.083,
+      "margin_kept": 213.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 0,
+      "avg_rounds": 2.0,
+      "violations": 5
+     }
+    }
+   },
+   "runs": [
+    {
+     "scenario": "n000",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 414.0,
+     "rounds": 2,
+     "ask": 446.0,
+     "floor": 374.0,
+     "ceiling": 417.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 357,
+       "counter": 414.0
+      }
+     ]
+    },
+    {
+     "scenario": "n001",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 508.0,
+     "floor": 480.0,
+     "ceiling": 416.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 406,
+       "counter": 503.0
+      },
+      {
+       "offer": 416,
+       "counter": 499.0
+      }
+     ]
+    },
+    {
+     "scenario": "n002",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1327.0,
+     "rounds": 2,
+     "ask": 1375.0,
+     "floor": 1256.0,
+     "ceiling": 1361.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1100,
+       "counter": 1327.0
+      }
+     ]
+    },
+    {
+     "scenario": "n003",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1714,
+     "rounds": 3,
+     "ask": 1865.0,
+     "floor": 1689.0,
+     "ceiling": 1721.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1492,
+       "counter": 1812.0
+      },
+      {
+       "offer": 1652,
+       "counter": 1775.0
+      }
+     ]
+    },
+    {
+     "scenario": "n004",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1174.0,
+     "floor": 1097.0,
+     "ceiling": 1047.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 939,
+       "counter": 1139.0
+      },
+      {
+       "offer": 1039,
+       "counter": 1120.0
+      },
+      {
+       "offer": 1047,
+       "counter": 1110.0
+      }
+     ]
+    },
+    {
+     "scenario": "n005",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 2021.0,
+     "rounds": 2,
+     "ask": 2078.0,
+     "floor": 1761.0,
+     "ceiling": 2026.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1662,
+       "counter": 2021.0
+      }
+     ]
+    },
+    {
+     "scenario": "n006",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1569.0,
+     "floor": 1459.0,
+     "ceiling": 1376.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1255,
+       "counter": 1525.0
+      },
+      {
+       "offer": 1376,
+       "counter": 1499.0
+      }
+     ]
+    },
+    {
+     "scenario": "n007",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 800.0,
+     "floor": 725.0,
+     "ceiling": 707.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 640,
+       "counter": 778.0
+      },
+      {
+       "offer": 707,
+       "counter": 762.0
+      }
+     ]
+    },
+    {
+     "scenario": "n008",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 760,
+     "rounds": 2,
+     "ask": 878.0,
+     "floor": 746.0,
+     "ceiling": 771.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 702,
+       "counter": 819.0
+      }
+     ]
+    },
+    {
+     "scenario": "n009",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1053.0,
+     "rounds": 2,
+     "ask": 1085.0,
+     "floor": 907.0,
+     "ceiling": 1060.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 868,
+       "counter": 1053.0
+      }
+     ]
+    },
+    {
+     "scenario": "n010",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 2238.0,
+     "floor": 2084.0,
+     "ceiling": 1982.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1790,
+       "counter": 2176.0
+      },
+      {
+       "offer": 1982,
+       "counter": 2139.0
+      }
+     ]
+    },
+    {
+     "scenario": "n011",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1833,
+     "rounds": 3,
+     "ask": 2016.0,
+     "floor": 1826.0,
+     "ceiling": 1833.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1613,
+       "counter": 1959.0
+      },
+      {
+       "offer": 1786,
+       "counter": 1919.0
+      }
+     ]
+    },
+    {
+     "scenario": "n012",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1620.0,
+     "floor": 1439.0,
+     "ceiling": 1426.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1296,
+       "counter": 1539.0
+      },
+      {
+       "offer": 1418,
+       "counter": 1494.0
+      },
+      {
+       "offer": 1426,
+       "counter": 1469.0
+      }
+     ]
+    },
+    {
+     "scenario": "n013",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 381.0,
+     "rounds": 2,
+     "ask": 393.0,
+     "floor": 325.0,
+     "ceiling": 408.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 314,
+       "counter": 381.0
+      }
+     ]
+    },
+    {
+     "scenario": "n014",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 841.0,
+     "floor": 733.0,
+     "ceiling": 680.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 673,
+       "counter": 798.0
+      },
+      {
+       "offer": 680,
+       "counter": 772.0
+      }
+     ]
+    },
+    {
+     "scenario": "n015",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1359.0,
+     "floor": 1259.0,
+     "ceiling": 1202.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1087,
+       "counter": 1329.0
+      },
+      {
+       "offer": 1202,
+       "counter": 1308.0
+      }
+     ]
+    },
+    {
+     "scenario": "n016",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 465.0,
+     "floor": 408.0,
+     "ceiling": 401.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 372,
+       "counter": 439.0
+      },
+      {
+       "offer": 401,
+       "counter": 425.0
+      }
+     ]
+    },
+    {
+     "scenario": "n017",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1596.0,
+     "floor": 1504.0,
+     "ceiling": 1445.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1277,
+       "counter": 1579.0
+      },
+      {
+       "offer": 1428,
+       "counter": 1566.0
+      },
+      {
+       "offer": 1445,
+       "counter": 1555.0
+      }
+     ]
+    },
+    {
+     "scenario": "n018",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 2080.0,
+     "rounds": 3,
+     "ask": 2214.0,
+     "floor": 2004.0,
+     "ceiling": 2129.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1771,
+       "counter": 2130.0
+      },
+      {
+       "offer": 1950,
+       "counter": 2080.0
+      }
+     ]
+    },
+    {
+     "scenario": "n019",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1407,
+     "rounds": 2,
+     "ask": 1597.0,
+     "floor": 1394.0,
+     "ceiling": 1452.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1278,
+       "counter": 1536.0
+      }
+     ]
+    },
+    {
+     "scenario": "n020",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1474.0,
+     "floor": 1205.0,
+     "ceiling": 1202.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1179,
+       "counter": 1353.0
+      },
+      {
+       "offer": 1202,
+       "counter": 1286.0
+      }
+     ]
+    },
+    {
+     "scenario": "n021",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1204.0,
+     "floor": 981.0,
+     "ceiling": 947.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 963,
+       "counter": 1164.0
+      }
+     ]
+    },
+    {
+     "scenario": "n022",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1364.0,
+     "floor": 1277.0,
+     "ceiling": 1230.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1091,
+       "counter": 1329.0
+      },
+      {
+       "offer": 1210,
+       "counter": 1308.0
+      }
+     ]
+    },
+    {
+     "scenario": "n023",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 957,
+     "rounds": 3,
+     "ask": 1069.0,
+     "floor": 952.0,
+     "ceiling": 957.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 855,
+       "counter": 1034.0
+      },
+      {
+       "offer": 944,
+       "counter": 1009.0
+      }
+     ]
+    },
+    {
+     "scenario": "n024",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 376,
+     "rounds": 2,
+     "ask": 439.0,
+     "floor": 359.0,
+     "ceiling": 376.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 351,
+       "counter": 403.0
+      }
+     ]
+    },
+    {
+     "scenario": "n025",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1279,
+     "rounds": 2,
+     "ask": 1447.0,
+     "floor": 1184.0,
+     "ceiling": 1360.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1158,
+       "counter": 1400.0
+      }
+     ]
+    },
+    {
+     "scenario": "n026",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 706.0,
+     "rounds": 2,
+     "ask": 747.0,
+     "floor": 645.0,
+     "ceiling": 720.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 598,
+       "counter": 706.0
+      }
+     ]
+    },
+    {
+     "scenario": "n027",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1330.0,
+     "rounds": 2,
+     "ask": 1395.0,
+     "floor": 1179.0,
+     "ceiling": 1417.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1116,
+       "counter": 1330.0
+      }
+     ]
+    },
+    {
+     "scenario": "n028",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 639.0,
+     "rounds": 2,
+     "ask": 697.0,
+     "floor": 568.0,
+     "ceiling": 791.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 558,
+       "counter": 639.0
+      }
+     ]
+    },
+    {
+     "scenario": "n029",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1370,
+     "rounds": 2,
+     "ask": 1542.0,
+     "floor": 1342.0,
+     "ceiling": 1371.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1234,
+       "counter": 1506.0
+      }
+     ]
+    },
+    {
+     "scenario": "n030",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1058.0,
+     "rounds": 2,
+     "ask": 1095.0,
+     "floor": 1002.0,
+     "ceiling": 1143.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 876,
+       "counter": 1058.0
+      }
+     ]
+    },
+    {
+     "scenario": "n031",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1110.0,
+     "rounds": 2,
+     "ask": 1167.0,
+     "floor": 977.0,
+     "ceiling": 1131.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 934,
+       "counter": 1110.0
+      }
+     ]
+    },
+    {
+     "scenario": "n032",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1837.0,
+     "rounds": 2,
+     "ask": 1922.0,
+     "floor": 1734.0,
+     "ceiling": 2163.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1538,
+       "counter": 1837.0
+      }
+     ]
+    },
+    {
+     "scenario": "n033",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1696.0,
+     "floor": 1524.0,
+     "ceiling": 1490.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1357,
+       "counter": 1665.0
+      },
+      {
+       "offer": 1490,
+       "counter": 1640.0
+      }
+     ]
+    },
+    {
+     "scenario": "n034",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 675.0,
+     "rounds": 2,
+     "ask": 700.0,
+     "floor": 638.0,
+     "ceiling": 724.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 560,
+       "counter": 675.0
+      }
+     ]
+    },
+    {
+     "scenario": "n035",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1223.0,
+     "floor": 1043.0,
+     "ceiling": 958.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 978,
+       "counter": 1169.0
+      }
+     ]
+    },
+    {
+     "scenario": "n036",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1877.0,
+     "floor": 1742.0,
+     "ceiling": 1446.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 1502,
+       "counter": 1816.0
+      }
+     ]
+    },
+    {
+     "scenario": "n037",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1630.0,
+     "floor": 1463.0,
+     "ceiling": 1378.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1304,
+       "counter": 1600.0
+      },
+      {
+       "offer": 1378,
+       "counter": 1575.0
+      }
+     ]
+    },
+    {
+     "scenario": "n038",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1283.0,
+     "rounds": 2,
+     "ask": 1375.0,
+     "floor": 1146.0,
+     "ceiling": 1364.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1100,
+       "counter": 1283.0
+      }
+     ]
+    },
+    {
+     "scenario": "n039",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 438.0,
+     "floor": 388.0,
+     "ceiling": 383.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 350,
+       "counter": 423.0
+      },
+      {
+       "offer": 383,
+       "counter": 412.0
+      }
+     ]
+    },
+    {
+     "scenario": "n040",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 632.0,
+     "rounds": 2,
+     "ask": 660.0,
+     "floor": 597.0,
+     "ceiling": 673.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 528,
+       "counter": 632.0
+      }
+     ]
+    },
+    {
+     "scenario": "n041",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1885,
+     "rounds": 1,
+     "ask": 2356.0,
+     "floor": 1885.0,
+     "ceiling": 1911.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n042",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1556.0,
+     "rounds": 2,
+     "ask": 1606.0,
+     "floor": 1480.0,
+     "ceiling": 1585.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1285,
+       "counter": 1556.0
+      }
+     ]
+    },
+    {
+     "scenario": "n043",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 465.0,
+     "floor": 416.0,
+     "ceiling": 346.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 372,
+       "counter": 450.0
+      }
+     ]
+    },
+    {
+     "scenario": "n044",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1097,
+     "rounds": 3,
+     "ask": 1214.0,
+     "floor": 1095.0,
+     "ceiling": 1097.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 971,
+       "counter": 1160.0
+      },
+      {
+       "offer": 1066,
+       "counter": 1131.0
+      }
+     ]
+    },
+    {
+     "scenario": "n045",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1419.0,
+     "floor": 1344.0,
+     "ceiling": 1256.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1135,
+       "counter": 1406.0
+      },
+      {
+       "offer": 1256,
+       "counter": 1395.0
+      }
+     ]
+    },
+    {
+     "scenario": "n046",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 937,
+     "rounds": 2,
+     "ask": 1096.0,
+     "floor": 909.0,
+     "ceiling": 937.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 877,
+       "counter": 1021.0
+      }
+     ]
+    },
+    {
+     "scenario": "n047",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1163.0,
+     "floor": 1000.0,
+     "ceiling": 895.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 930,
+       "counter": 1114.0
+      }
+     ]
+    },
+    {
+     "scenario": "n048",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1970.0,
+     "floor": 1610.0,
+     "ceiling": 1591.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1576,
+       "counter": 1808.0
+      },
+      {
+       "offer": 1591,
+       "counter": 1719.0
+      }
+     ]
+    },
+    {
+     "scenario": "n049",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1421.0,
+     "floor": 1318.0,
+     "ceiling": 1302.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1137,
+       "counter": 1402.0
+      },
+      {
+       "offer": 1270,
+       "counter": 1387.0
+      },
+      {
+       "offer": 1302,
+       "counter": 1375.0
+      }
+     ]
+    },
+    {
+     "scenario": "n050",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1470.0,
+     "rounds": 3,
+     "ask": 1527.0,
+     "floor": 1438.0,
+     "ceiling": 1488.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1222,
+       "counter": 1491.0
+      },
+      {
+       "offer": 1356,
+       "counter": 1470.0
+      }
+     ]
+    },
+    {
+     "scenario": "n051",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 942.0,
+     "floor": 839.0,
+     "ceiling": 767.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 754,
+       "counter": 911.0
+      },
+      {
+       "offer": 767,
+       "counter": 889.0
+      }
+     ]
+    },
+    {
+     "scenario": "n052",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1890,
+     "rounds": 3,
+     "ask": 2119.0,
+     "floor": 1866.0,
+     "ceiling": 1890.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1695,
+       "counter": 2005.0
+      },
+      {
+       "offer": 1850,
+       "counter": 1942.0
+      }
+     ]
+    },
+    {
+     "scenario": "n053",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1373.0,
+     "rounds": 2,
+     "ask": 1411.0,
+     "floor": 1199.0,
+     "ceiling": 1496.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1129,
+       "counter": 1373.0
+      }
+     ]
+    },
+    {
+     "scenario": "n054",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 937,
+     "rounds": 2,
+     "ask": 1130.0,
+     "floor": 911.0,
+     "ceiling": 937.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 904,
+       "counter": 1042.0
+      }
+     ]
+    },
+    {
+     "scenario": "n055",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1871.0,
+     "floor": 1533.0,
+     "ceiling": 1404.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 1497,
+       "counter": 1770.0
+      }
+     ]
+    },
+    {
+     "scenario": "n056",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1443.0,
+     "rounds": 2,
+     "ask": 1491.0,
+     "floor": 1384.0,
+     "ceiling": 1496.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1193,
+       "counter": 1443.0
+      }
+     ]
+    },
+    {
+     "scenario": "n057",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1410,
+     "rounds": 2,
+     "ask": 1597.0,
+     "floor": 1377.0,
+     "ceiling": 1410.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1278,
+       "counter": 1557.0
+      }
+     ]
+    },
+    {
+     "scenario": "n058",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 2318.0,
+     "floor": 2194.0,
+     "ceiling": 1886.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1854,
+       "counter": 2268.0
+      },
+      {
+       "offer": 1886,
+       "counter": 2238.0
+      }
+     ]
+    },
+    {
+     "scenario": "n059",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1734,
+     "rounds": 2,
+     "ask": 1991.0,
+     "floor": 1604.0,
+     "ceiling": 1761.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1593,
+       "counter": 1875.0
+      }
+     ]
+    },
+    {
+     "scenario": "n060",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1190.0,
+     "rounds": 2,
+     "ask": 1272.0,
+     "floor": 1089.0,
+     "ceiling": 1226.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1018,
+       "counter": 1190.0
+      }
+     ]
+    },
+    {
+     "scenario": "n061",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 864,
+     "rounds": 3,
+     "ask": 928.0,
+     "floor": 847.0,
+     "ceiling": 871.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 742,
+       "counter": 913.0
+      },
+      {
+       "offer": 828,
+       "counter": 901.0
+      }
+     ]
+    },
+    {
+     "scenario": "n062",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 699.0,
+     "rounds": 2,
+     "ask": 746.0,
+     "floor": 629.0,
+     "ceiling": 725.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 597,
+       "counter": 699.0
+      }
+     ]
+    },
+    {
+     "scenario": "n063",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1388.0,
+     "floor": 1316.0,
+     "ceiling": 1253.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1110,
+       "counter": 1366.0
+      },
+      {
+       "offer": 1238,
+       "counter": 1351.0
+      },
+      {
+       "offer": 1253,
+       "counter": 1340.0
+      }
+     ]
+    },
+    {
+     "scenario": "n064",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 997.0,
+     "rounds": 2,
+     "ask": 1091.0,
+     "floor": 883.0,
+     "ceiling": 1106.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 873,
+       "counter": 997.0
+      }
+     ]
+    },
+    {
+     "scenario": "n065",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 838.0,
+     "floor": 755.0,
+     "ceiling": 719.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 670,
+       "counter": 823.0
+      },
+      {
+       "offer": 719,
+       "counter": 811.0
+      }
+     ]
+    },
+    {
+     "scenario": "n066",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 432.0,
+     "floor": 410.0,
+     "ceiling": 402.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 346,
+       "counter": 423.0
+      },
+      {
+       "offer": 384,
+       "counter": 418.0
+      }
+     ]
+    },
+    {
+     "scenario": "n067",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1008.0,
+     "rounds": 2,
+     "ask": 1054.0,
+     "floor": 900.0,
+     "ceiling": 1034.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 843,
+       "counter": 1008.0
+      }
+     ]
+    },
+    {
+     "scenario": "n068",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1380.0,
+     "floor": 1135.0,
+     "ceiling": 1099.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 1104,
+       "counter": 1270.0
+      }
+     ]
+    },
+    {
+     "scenario": "n069",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 464.0,
+     "floor": 435.0,
+     "ceiling": 410.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 371,
+       "counter": 459.0
+      },
+      {
+       "offer": 410,
+       "counter": 455.0
+      }
+     ]
+    },
+    {
+     "scenario": "n070",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 2410.0,
+     "floor": 2244.0,
+     "ceiling": 2143.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1928,
+       "counter": 2344.0
+      },
+      {
+       "offer": 2136,
+       "counter": 2304.0
+      }
+     ]
+    },
+    {
+     "scenario": "n071",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1401.0,
+     "floor": 1278.0,
+     "ceiling": 1172.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1121,
+       "counter": 1364.0
+      },
+      {
+       "offer": 1172,
+       "counter": 1338.0
+      }
+     ]
+    },
+    {
+     "scenario": "n072",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1295.0,
+     "rounds": 2,
+     "ask": 1397.0,
+     "floor": 1171.0,
+     "ceiling": 1480.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1118,
+       "counter": 1295.0
+      }
+     ]
+    },
+    {
+     "scenario": "n073",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 467.0,
+     "floor": 430.0,
+     "ceiling": 370.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 374,
+       "counter": 460.0
+      }
+     ]
+    },
+    {
+     "scenario": "n074",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1254.0,
+     "floor": 1016.0,
+     "ceiling": 960.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 1003,
+       "counter": 1159.0
+      }
+     ]
+    },
+    {
+     "scenario": "n075",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 1,
+     "ask": 1694.0,
+     "floor": 1439.0,
+     "ceiling": 1328.0,
+     "violations": [
+      "over_ceiling"
+     ],
+     "why": null,
+     "history": [
+      {
+       "offer": 1355,
+       "counter": 1618.0
+      }
+     ]
+    },
+    {
+     "scenario": "n076",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1049,
+     "rounds": 2,
+     "ask": 1209.0,
+     "floor": 1035.0,
+     "ceiling": 1090.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 967,
+       "counter": 1131.0
+      }
+     ]
+    },
+    {
+     "scenario": "n077",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 840.0,
+     "floor": 773.0,
+     "ceiling": 769.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 672,
+       "counter": 828.0
+      },
+      {
+       "offer": 750,
+       "counter": 818.0
+      },
+      {
+       "offer": 769,
+       "counter": 810.0
+      }
+     ]
+    },
+    {
+     "scenario": "n078",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1082,
+     "rounds": 2,
+     "ask": 1302.0,
+     "floor": 1082.0,
+     "ceiling": 1082.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1042,
+       "counter": 1214.0
+      }
+     ]
+    },
+    {
+     "scenario": "n079",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 459.0,
+     "floor": 422.0,
+     "ceiling": 412.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 367,
+       "counter": 448.0
+      },
+      {
+       "offer": 408,
+       "counter": 440.0
+      },
+      {
+       "offer": 412,
+       "counter": 435.0
+      }
+     ]
+    }
+   ]
+  },
+  "anchored": {
+   "description": "Waybill's policy: credible opening, shrinking steps, accepts once the gap is small.",
+   "summary": {
+    "overall": {
+     "scenarios": 80,
+     "close_rate": 1.0,
+     "walked_when_hopeless": 1.0,
+     "overpay_vs_floor": 0.0216,
+     "savings_vs_ask": 0.1185,
+     "margin_kept": 3641.0,
+     "loads_lost": 0,
+     "rule_breaking_deals": 0,
+     "hung_up_on": 8,
+     "avg_rounds": 1.74,
+     "violations": 0
+    },
+    "by_personality": {
+     "flexible": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0223,
+      "savings_vs_ask": 0.1199,
+      "margin_kept": 1430.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 0,
+      "avg_rounds": 1.9,
+      "violations": 0
+     },
+     "firm": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.022,
+      "savings_vs_ask": 0.1345,
+      "margin_kept": 871.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 0,
+      "avg_rounds": 1.85,
+      "violations": 0
+     },
+     "flaky": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0201,
+      "savings_vs_ask": 0.1063,
+      "margin_kept": 804.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 1,
+      "avg_rounds": 2.0,
+      "violations": 0
+     },
+     "proud": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0223,
+      "savings_vs_ask": 0.1168,
+      "margin_kept": 536.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 7,
+      "avg_rounds": 1.2,
+      "violations": 0
+     }
+    }
+   },
+   "runs": [
+    {
+     "scenario": "n000",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 375,
+     "rounds": 1,
+     "ask": 446.0,
+     "floor": 374.0,
+     "ceiling": 417.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n001",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 508.0,
+     "floor": 480.0,
+     "ceiling": 416.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 374,
+       "counter": 503.0
+      },
+      {
+       "offer": 416,
+       "counter": 499.0
+      }
+     ]
+    },
+    {
+     "scenario": "n002",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1262,
+     "rounds": 2,
+     "ask": 1375.0,
+     "floor": 1256.0,
+     "ceiling": 1361.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1182,
+       "counter": 1327.0
+      }
+     ]
+    },
+    {
+     "scenario": "n003",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1694,
+     "rounds": 2,
+     "ask": 1865.0,
+     "floor": 1689.0,
+     "ceiling": 1721.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1549,
+       "counter": 1812.0
+      }
+     ]
+    },
+    {
+     "scenario": "n004",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1174.0,
+     "floor": 1097.0,
+     "ceiling": 1047.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 942,
+       "counter": 1139.0
+      },
+      {
+       "offer": 1047,
+       "counter": 1120.0
+      }
+     ]
+    },
+    {
+     "scenario": "n005",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1787,
+     "rounds": 1,
+     "ask": 2078.0,
+     "floor": 1761.0,
+     "ceiling": 2026.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n006",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1569.0,
+     "floor": 1459.0,
+     "ceiling": 1376.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1238,
+       "counter": 1525.0
+      },
+      {
+       "offer": 1376,
+       "counter": 1499.0
+      }
+     ]
+    },
+    {
+     "scenario": "n007",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 800.0,
+     "floor": 725.0,
+     "ceiling": 707.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 636,
+       "counter": 778.0
+      },
+      {
+       "offer": 707,
+       "counter": 762.0
+      }
+     ]
+    },
+    {
+     "scenario": "n008",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 763,
+     "rounds": 2,
+     "ask": 878.0,
+     "floor": 746.0,
+     "ceiling": 771.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 694,
+       "counter": 819.0
+      }
+     ]
+    },
+    {
+     "scenario": "n009",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 933,
+     "rounds": 1,
+     "ask": 1085.0,
+     "floor": 907.0,
+     "ceiling": 1060.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n010",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 2238.0,
+     "floor": 2084.0,
+     "ceiling": 1982.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1784,
+       "counter": 2176.0
+      },
+      {
+       "offer": 1982,
+       "counter": 2139.0
+      }
+     ]
+    },
+    {
+     "scenario": "n011",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1833,
+     "rounds": 3,
+     "ask": 2016.0,
+     "floor": 1826.0,
+     "ceiling": 1833.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1650,
+       "counter": 1959.0
+      },
+      {
+       "offer": 1820,
+       "counter": 1919.0
+      }
+     ]
+    },
+    {
+     "scenario": "n012",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1620.0,
+     "floor": 1439.0,
+     "ceiling": 1426.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1283,
+       "counter": 1539.0
+      },
+      {
+       "offer": 1424,
+       "counter": 1494.0
+      },
+      {
+       "offer": 1426,
+       "counter": 1469.0
+      }
+     ]
+    },
+    {
+     "scenario": "n013",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 338,
+     "rounds": 1,
+     "ask": 393.0,
+     "floor": 325.0,
+     "ceiling": 408.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n014",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 841.0,
+     "floor": 733.0,
+     "ceiling": 680.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 612,
+       "counter": 798.0
+      },
+      {
+       "offer": 680,
+       "counter": 772.0
+      }
+     ]
+    },
+    {
+     "scenario": "n015",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1359.0,
+     "floor": 1259.0,
+     "ceiling": 1202.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1082,
+       "counter": 1329.0
+      },
+      {
+       "offer": 1202,
+       "counter": 1308.0
+      }
+     ]
+    },
+    {
+     "scenario": "n016",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 465.0,
+     "floor": 408.0,
+     "ceiling": 401.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 361,
+       "counter": 439.0
+      },
+      {
+       "offer": 401,
+       "counter": 425.0
+      }
+     ]
+    },
+    {
+     "scenario": "n017",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1596.0,
+     "floor": 1504.0,
+     "ceiling": 1445.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1300,
+       "counter": 1579.0
+      },
+      {
+       "offer": 1445,
+       "counter": 1566.0
+      }
+     ]
+    },
+    {
+     "scenario": "n018",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 2028,
+     "rounds": 2,
+     "ask": 2214.0,
+     "floor": 2004.0,
+     "ceiling": 2129.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1904,
+       "counter": 2130.0
+      }
+     ]
+    },
+    {
+     "scenario": "n019",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1433,
+     "rounds": 2,
+     "ask": 1597.0,
+     "floor": 1394.0,
+     "ceiling": 1452.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1307,
+       "counter": 1536.0
+      }
+     ]
+    },
+    {
+     "scenario": "n020",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1474.0,
+     "floor": 1205.0,
+     "ceiling": 1202.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1082,
+       "counter": 1353.0
+      },
+      {
+       "offer": 1202,
+       "counter": 1286.0
+      }
+     ]
+    },
+    {
+     "scenario": "n021",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1204.0,
+     "floor": 981.0,
+     "ceiling": 947.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 852,
+       "counter": 1164.0
+      },
+      {
+       "offer": 947,
+       "counter": 1131.0
+      }
+     ]
+    },
+    {
+     "scenario": "n022",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1364.0,
+     "floor": 1277.0,
+     "ceiling": 1230.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1107,
+       "counter": 1329.0
+      },
+      {
+       "offer": 1229,
+       "counter": 1308.0
+      }
+     ]
+    },
+    {
+     "scenario": "n023",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 956,
+     "rounds": 2,
+     "ask": 1069.0,
+     "floor": 952.0,
+     "ceiling": 957.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 861,
+       "counter": 1034.0
+      }
+     ]
+    },
+    {
+     "scenario": "n024",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 374,
+     "rounds": 2,
+     "ask": 439.0,
+     "floor": 359.0,
+     "ceiling": 376.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 338,
+       "counter": 403.0
+      }
+     ]
+    },
+    {
+     "scenario": "n025",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1224,
+     "rounds": 1,
+     "ask": 1447.0,
+     "floor": 1184.0,
+     "ceiling": 1360.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n026",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 677,
+     "rounds": 2,
+     "ask": 747.0,
+     "floor": 645.0,
+     "ceiling": 720.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 642,
+       "counter": 706.0
+      }
+     ]
+    },
+    {
+     "scenario": "n027",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1200,
+     "rounds": 1,
+     "ask": 1395.0,
+     "floor": 1179.0,
+     "ceiling": 1417.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n028",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 599,
+     "rounds": 1,
+     "ask": 697.0,
+     "floor": 568.0,
+     "ceiling": 791.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n029",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1371,
+     "rounds": 2,
+     "ask": 1542.0,
+     "floor": 1342.0,
+     "ceiling": 1371.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1234,
+       "counter": 1506.0
+      }
+     ]
+    },
+    {
+     "scenario": "n030",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1006,
+     "rounds": 2,
+     "ask": 1095.0,
+     "floor": 1002.0,
+     "ceiling": 1143.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 942,
+       "counter": 1058.0
+      }
+     ]
+    },
+    {
+     "scenario": "n031",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1004,
+     "rounds": 1,
+     "ask": 1167.0,
+     "floor": 977.0,
+     "ceiling": 1131.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n032",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1754,
+     "rounds": 2,
+     "ask": 1922.0,
+     "floor": 1734.0,
+     "ceiling": 2163.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1653,
+       "counter": 1837.0
+      }
+     ]
+    },
+    {
+     "scenario": "n033",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1696.0,
+     "floor": 1524.0,
+     "ceiling": 1490.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1341,
+       "counter": 1665.0
+      },
+      {
+       "offer": 1490,
+       "counter": 1640.0
+      }
+     ]
+    },
+    {
+     "scenario": "n034",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 642,
+     "rounds": 2,
+     "ask": 700.0,
+     "floor": 638.0,
+     "ceiling": 724.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 602,
+       "counter": 675.0
+      }
+     ]
+    },
+    {
+     "scenario": "n035",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1223.0,
+     "floor": 1043.0,
+     "ceiling": 958.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n036",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1877.0,
+     "floor": 1742.0,
+     "ceiling": 1446.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1301,
+       "counter": 1816.0
+      },
+      {
+       "offer": 1446,
+       "counter": 1783.0
+      }
+     ]
+    },
+    {
+     "scenario": "n037",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1630.0,
+     "floor": 1463.0,
+     "ceiling": 1378.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1240,
+       "counter": 1600.0
+      },
+      {
+       "offer": 1378,
+       "counter": 1575.0
+      }
+     ]
+    },
+    {
+     "scenario": "n038",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1182,
+     "rounds": 1,
+     "ask": 1375.0,
+     "floor": 1146.0,
+     "ceiling": 1364.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n039",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 438.0,
+     "floor": 388.0,
+     "ceiling": 383.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 345,
+       "counter": 423.0
+      },
+      {
+       "offer": 383,
+       "counter": 412.0
+      }
+     ]
+    },
+    {
+     "scenario": "n040",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 603,
+     "rounds": 2,
+     "ask": 660.0,
+     "floor": 597.0,
+     "ceiling": 673.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 568,
+       "counter": 632.0
+      }
+     ]
+    },
+    {
+     "scenario": "n041",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1911,
+     "rounds": 2,
+     "ask": 2356.0,
+     "floor": 1885.0,
+     "ceiling": 1911.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1720,
+       "counter": 2271.0
+      }
+     ]
+    },
+    {
+     "scenario": "n042",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1526.0,
+     "rounds": 3,
+     "ask": 1606.0,
+     "floor": 1480.0,
+     "ceiling": 1585.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1381,
+       "counter": 1556.0
+      },
+      {
+       "offer": 1477,
+       "counter": 1526.0
+      }
+     ]
+    },
+    {
+     "scenario": "n043",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 465.0,
+     "floor": 416.0,
+     "ceiling": 346.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n044",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1097,
+     "rounds": 3,
+     "ask": 1214.0,
+     "floor": 1095.0,
+     "ceiling": 1097.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 987,
+       "counter": 1160.0
+      },
+      {
+       "offer": 1082,
+       "counter": 1131.0
+      }
+     ]
+    },
+    {
+     "scenario": "n045",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1419.0,
+     "floor": 1344.0,
+     "ceiling": 1256.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1130,
+       "counter": 1406.0
+      },
+      {
+       "offer": 1256,
+       "counter": 1395.0
+      }
+     ]
+    },
+    {
+     "scenario": "n046",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 937,
+     "rounds": 2,
+     "ask": 1096.0,
+     "floor": 909.0,
+     "ceiling": 937.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 843,
+       "counter": 1021.0
+      }
+     ]
+    },
+    {
+     "scenario": "n047",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1163.0,
+     "floor": 1000.0,
+     "ceiling": 895.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n048",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1970.0,
+     "floor": 1610.0,
+     "ceiling": 1591.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1432,
+       "counter": 1808.0
+      },
+      {
+       "offer": 1591,
+       "counter": 1719.0
+      }
+     ]
+    },
+    {
+     "scenario": "n049",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1421.0,
+     "floor": 1318.0,
+     "ceiling": 1302.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1172,
+       "counter": 1402.0
+      },
+      {
+       "offer": 1298,
+       "counter": 1387.0
+      },
+      {
+       "offer": 1302,
+       "counter": 1375.0
+      }
+     ]
+    },
+    {
+     "scenario": "n050",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1470.0,
+     "rounds": 3,
+     "ask": 1527.0,
+     "floor": 1438.0,
+     "ceiling": 1488.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1313,
+       "counter": 1491.0
+      },
+      {
+       "offer": 1411,
+       "counter": 1470.0
+      }
+     ]
+    },
+    {
+     "scenario": "n051",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 942.0,
+     "floor": 839.0,
+     "ceiling": 767.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n052",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1868,
+     "rounds": 2,
+     "ask": 2119.0,
+     "floor": 1866.0,
+     "ceiling": 1890.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1701,
+       "counter": 2005.0
+      }
+     ]
+    },
+    {
+     "scenario": "n053",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1213,
+     "rounds": 1,
+     "ask": 1411.0,
+     "floor": 1199.0,
+     "ceiling": 1496.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n054",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 937,
+     "rounds": 2,
+     "ask": 1130.0,
+     "floor": 911.0,
+     "ceiling": 937.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 843,
+       "counter": 1042.0
+      }
+     ]
+    },
+    {
+     "scenario": "n055",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1871.0,
+     "floor": 1533.0,
+     "ceiling": 1404.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n056",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1416.0,
+     "rounds": 3,
+     "ask": 1491.0,
+     "floor": 1384.0,
+     "ceiling": 1496.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1282,
+       "counter": 1443.0
+      },
+      {
+       "offer": 1371,
+       "counter": 1416.0
+      }
+     ]
+    },
+    {
+     "scenario": "n057",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1410,
+     "rounds": 2,
+     "ask": 1597.0,
+     "floor": 1377.0,
+     "ceiling": 1410.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1269,
+       "counter": 1557.0
+      }
+     ]
+    },
+    {
+     "scenario": "n058",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 2318.0,
+     "floor": 2194.0,
+     "ceiling": 1886.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1697,
+       "counter": 2268.0
+      },
+      {
+       "offer": 1886,
+       "counter": 2238.0
+      }
+     ]
+    },
+    {
+     "scenario": "n059",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1744,
+     "rounds": 2,
+     "ask": 1991.0,
+     "floor": 1604.0,
+     "ceiling": 1761.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1585,
+       "counter": 1875.0
+      }
+     ]
+    },
+    {
+     "scenario": "n060",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1094,
+     "rounds": 1,
+     "ask": 1272.0,
+     "floor": 1089.0,
+     "ceiling": 1226.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n061",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 855,
+     "rounds": 2,
+     "ask": 928.0,
+     "floor": 847.0,
+     "ceiling": 871.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 784,
+       "counter": 913.0
+      }
+     ]
+    },
+    {
+     "scenario": "n062",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 642,
+     "rounds": 1,
+     "ask": 746.0,
+     "floor": 629.0,
+     "ceiling": 725.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n063",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1388.0,
+     "floor": 1316.0,
+     "ceiling": 1253.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1128,
+       "counter": 1366.0
+      },
+      {
+       "offer": 1253,
+       "counter": 1351.0
+      }
+     ]
+    },
+    {
+     "scenario": "n064",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 938,
+     "rounds": 1,
+     "ask": 1091.0,
+     "floor": 883.0,
+     "ceiling": 1106.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n065",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 838.0,
+     "floor": 755.0,
+     "ceiling": 719.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 647,
+       "counter": 823.0
+      },
+      {
+       "offer": 719,
+       "counter": 811.0
+      }
+     ]
+    },
+    {
+     "scenario": "n066",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 432.0,
+     "floor": 410.0,
+     "ceiling": 402.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 362,
+       "counter": 423.0
+      },
+      {
+       "offer": 396,
+       "counter": 418.0
+      }
+     ]
+    },
+    {
+     "scenario": "n067",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 906,
+     "rounds": 1,
+     "ask": 1054.0,
+     "floor": 900.0,
+     "ceiling": 1034.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n068",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1380.0,
+     "floor": 1135.0,
+     "ceiling": 1099.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 989,
+       "counter": 1270.0
+      },
+      {
+       "offer": 1099,
+       "counter": 1209.0
+      }
+     ]
+    },
+    {
+     "scenario": "n069",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 464.0,
+     "floor": 435.0,
+     "ceiling": 410.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 369,
+       "counter": 459.0
+      },
+      {
+       "offer": 410,
+       "counter": 455.0
+      }
+     ]
+    },
+    {
+     "scenario": "n070",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 2410.0,
+     "floor": 2244.0,
+     "ceiling": 2143.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1929,
+       "counter": 2344.0
+      },
+      {
+       "offer": 2143,
+       "counter": 2304.0
+      }
+     ]
+    },
+    {
+     "scenario": "n071",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1401.0,
+     "floor": 1278.0,
+     "ceiling": 1172.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n072",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1201,
+     "rounds": 1,
+     "ask": 1397.0,
+     "floor": 1171.0,
+     "ceiling": 1480.0,
+     "violations": [],
+     "why": null,
+     "history": []
+    },
+    {
+     "scenario": "n073",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 467.0,
+     "floor": 430.0,
+     "ceiling": 370.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 333,
+       "counter": 460.0
+      },
+      {
+       "offer": 370,
+       "counter": 455.0
+      }
+     ]
+    },
+    {
+     "scenario": "n074",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 1254.0,
+     "floor": 1016.0,
+     "ceiling": 960.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 864,
+       "counter": 1159.0
+      },
+      {
+       "offer": 960,
+       "counter": 1102.0
+      }
+     ]
+    },
+    {
+     "scenario": "n075",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1694.0,
+     "floor": 1439.0,
+     "ceiling": 1328.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n076",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1064,
+     "rounds": 2,
+     "ask": 1209.0,
+     "floor": 1035.0,
+     "ceiling": 1090.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 981,
+       "counter": 1131.0
+      }
+     ]
+    },
+    {
+     "scenario": "n077",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 840.0,
+     "floor": 773.0,
+     "ceiling": 769.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 692,
+       "counter": 828.0
+      },
+      {
+       "offer": 767,
+       "counter": 818.0
+      },
+      {
+       "offer": 769,
+       "counter": 810.0
+      }
+     ]
+    },
+    {
+     "scenario": "n078",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1082,
+     "rounds": 2,
+     "ask": 1302.0,
+     "floor": 1082.0,
+     "ceiling": 1082.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 974,
+       "counter": 1214.0
+      }
+     ]
+    },
+    {
+     "scenario": "n079",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 2,
+     "ask": 459.0,
+     "floor": 422.0,
+     "ceiling": 412.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 371,
+       "counter": 448.0
+      },
+      {
+       "offer": 412,
+       "counter": 440.0
+      }
+     ]
+    }
+   ]
+  },
+  "patient": {
+   "description": "Opens low, concedes slowly, holds out for a small gap before accepting.",
+   "summary": {
+    "overall": {
+     "scenarios": 80,
+     "close_rate": 0.714,
+     "walked_when_hopeless": 1.0,
+     "overpay_vs_floor": 0.0136,
+     "savings_vs_ask": 0.1373,
+     "margin_kept": 3340.0,
+     "loads_lost": 12,
+     "rule_breaking_deals": 0,
+     "hung_up_on": 32,
+     "avg_rounds": 2.35,
+     "violations": 0
+    },
+    "by_personality": {
+     "flexible": {
+      "scenarios": 20,
+      "close_rate": 0.923,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0119,
+      "savings_vs_ask": 0.1319,
+      "margin_kept": 1534.0,
+      "loads_lost": 1,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 1,
+      "avg_rounds": 3.7,
+      "violations": 0
+     },
+     "firm": {
+      "scenarios": 20,
+      "close_rate": 1.0,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0204,
+      "savings_vs_ask": 0.1358,
+      "margin_kept": 889.0,
+      "loads_lost": 0,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 0,
+      "avg_rounds": 3.0,
+      "violations": 0
+     },
+     "flaky": {
+      "scenarios": 20,
+      "close_rate": 0.417,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0088,
+      "savings_vs_ask": 0.1575,
+      "margin_kept": 404.0,
+      "loads_lost": 7,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 15,
+      "avg_rounds": 2.15,
+      "violations": 0
+     },
+     "proud": {
+      "scenarios": 20,
+      "close_rate": 0.5,
+      "walked_when_hopeless": 1.0,
+      "overpay_vs_floor": 0.0096,
+      "savings_vs_ask": 0.1313,
+      "margin_kept": 513.0,
+      "loads_lost": 4,
+      "rule_breaking_deals": 0,
+      "hung_up_on": 16,
+      "avg_rounds": 0.55,
+      "violations": 0
+     }
+    }
+   },
+   "runs": [
+    {
+     "scenario": "n000",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 375,
+     "rounds": 2,
+     "ask": 446.0,
+     "floor": 374.0,
+     "ceiling": 417.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 354,
+       "counter": 414.0
+      }
+     ]
+    },
+    {
+     "scenario": "n001",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 508.0,
+     "floor": 480.0,
+     "ceiling": 416.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 354,
+       "counter": 503.0
+      },
+      {
+       "offer": 406,
+       "counter": 499.0
+      },
+      {
+       "offer": 416,
+       "counter": 496.0
+      }
+     ]
+    },
+    {
+     "scenario": "n002",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1375.0,
+     "floor": 1256.0,
+     "ceiling": 1361.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1100,
+       "counter": 1327.0
+      },
+      {
+       "offer": 1179,
+       "counter": 1299.0
+      }
+     ]
+    },
+    {
+     "scenario": "n003",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1702,
+     "rounds": 5,
+     "ask": 1865.0,
+     "floor": 1689.0,
+     "ceiling": 1721.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1463,
+       "counter": 1812.0
+      },
+      {
+       "offer": 1585,
+       "counter": 1775.0
+      },
+      {
+       "offer": 1652,
+       "counter": 1749.0
+      },
+      {
+       "offer": 1686,
+       "counter": 1731.0
+      }
+     ]
+    },
+    {
+     "scenario": "n004",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 1174.0,
+     "floor": 1097.0,
+     "ceiling": 1047.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 890,
+       "counter": 1139.0
+      },
+      {
+       "offer": 977,
+       "counter": 1120.0
+      },
+      {
+       "offer": 1027,
+       "counter": 1110.0
+      },
+      {
+       "offer": 1047,
+       "counter": 1104.0
+      }
+     ]
+    },
+    {
+     "scenario": "n005",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1788,
+     "rounds": 2,
+     "ask": 2078.0,
+     "floor": 1761.0,
+     "ceiling": 2026.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1662,
+       "counter": 2021.0
+      }
+     ]
+    },
+    {
+     "scenario": "n006",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1569.0,
+     "floor": 1459.0,
+     "ceiling": 1376.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1170,
+       "counter": 1525.0
+      },
+      {
+       "offer": 1294,
+       "counter": 1499.0
+      }
+     ]
+    },
+    {
+     "scenario": "n007",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 800.0,
+     "floor": 725.0,
+     "ceiling": 707.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n008",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 748,
+     "rounds": 4,
+     "ask": 878.0,
+     "floor": 746.0,
+     "ceiling": 771.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 655,
+       "counter": 819.0
+      },
+      {
+       "offer": 712,
+       "counter": 786.0
+      },
+      {
+       "offer": 738,
+       "counter": 768.0
+      }
+     ]
+    },
+    {
+     "scenario": "n009",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 933,
+     "rounds": 2,
+     "ask": 1085.0,
+     "floor": 907.0,
+     "ceiling": 1060.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 868,
+       "counter": 1053.0
+      }
+     ]
+    },
+    {
+     "scenario": "n010",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 2238.0,
+     "floor": 2084.0,
+     "ceiling": 1982.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1685,
+       "counter": 2176.0
+      },
+      {
+       "offer": 1857,
+       "counter": 2139.0
+      }
+     ]
+    },
+    {
+     "scenario": "n011",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 2016.0,
+     "floor": 1826.0,
+     "ceiling": 1833.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n012",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 5,
+     "ask": 1620.0,
+     "floor": 1439.0,
+     "ceiling": 1426.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1212,
+       "counter": 1539.0
+      },
+      {
+       "offer": 1326,
+       "counter": 1494.0
+      },
+      {
+       "offer": 1385,
+       "counter": 1469.0
+      },
+      {
+       "offer": 1414,
+       "counter": 1456.0
+      },
+      {
+       "offer": 1426,
+       "counter": 1448.0
+      }
+     ]
+    },
+    {
+     "scenario": "n013",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 337,
+     "rounds": 2,
+     "ask": 393.0,
+     "floor": 325.0,
+     "ceiling": 408.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 314,
+       "counter": 381.0
+      }
+     ]
+    },
+    {
+     "scenario": "n014",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 841.0,
+     "floor": 733.0,
+     "ceiling": 680.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 578,
+       "counter": 798.0
+      },
+      {
+       "offer": 655,
+       "counter": 772.0
+      }
+     ]
+    },
+    {
+     "scenario": "n015",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1359.0,
+     "floor": 1259.0,
+     "ceiling": 1202.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n016",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 465.0,
+     "floor": 408.0,
+     "ceiling": 401.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 341,
+       "counter": 439.0
+      },
+      {
+       "offer": 375,
+       "counter": 425.0
+      },
+      {
+       "offer": 392,
+       "counter": 417.0
+      },
+      {
+       "offer": 401,
+       "counter": 413.0
+      }
+     ]
+    },
+    {
+     "scenario": "n017",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 1596.0,
+     "floor": 1504.0,
+     "ceiling": 1445.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1228,
+       "counter": 1579.0
+      },
+      {
+       "offer": 1351,
+       "counter": 1566.0
+      },
+      {
+       "offer": 1426,
+       "counter": 1555.0
+      },
+      {
+       "offer": 1445,
+       "counter": 1546.0
+      }
+     ]
+    },
+    {
+     "scenario": "n018",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 2214.0,
+     "floor": 2004.0,
+     "ceiling": 2129.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1771,
+       "counter": 2130.0
+      },
+      {
+       "offer": 1897,
+       "counter": 2080.0
+      }
+     ]
+    },
+    {
+     "scenario": "n019",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1597.0,
+     "floor": 1394.0,
+     "ceiling": 1452.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n020",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 1474.0,
+     "floor": 1205.0,
+     "ceiling": 1202.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1022,
+       "counter": 1353.0
+      },
+      {
+       "offer": 1138,
+       "counter": 1286.0
+      },
+      {
+       "offer": 1190,
+       "counter": 1250.0
+      },
+      {
+       "offer": 1202,
+       "counter": 1230.0
+      }
+     ]
+    },
+    {
+     "scenario": "n021",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1204.0,
+     "floor": 981.0,
+     "ceiling": 947.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 805,
+       "counter": 1164.0
+      },
+      {
+       "offer": 931,
+       "counter": 1131.0
+      },
+      {
+       "offer": 947,
+       "counter": 1104.0
+      }
+     ]
+    },
+    {
+     "scenario": "n022",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1364.0,
+     "floor": 1277.0,
+     "ceiling": 1230.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1046,
+       "counter": 1329.0
+      },
+      {
+       "offer": 1145,
+       "counter": 1308.0
+      }
+     ]
+    },
+    {
+     "scenario": "n023",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1069.0,
+     "floor": 952.0,
+     "ceiling": 957.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n024",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 361,
+     "rounds": 3,
+     "ask": 439.0,
+     "floor": 359.0,
+     "ceiling": 376.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 320,
+       "counter": 403.0
+      },
+      {
+       "offer": 349,
+       "counter": 383.0
+      }
+     ]
+    },
+    {
+     "scenario": "n025",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1241,
+     "rounds": 2,
+     "ask": 1447.0,
+     "floor": 1184.0,
+     "ceiling": 1360.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1156,
+       "counter": 1400.0
+      }
+     ]
+    },
+    {
+     "scenario": "n026",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 652,
+     "rounds": 3,
+     "ask": 747.0,
+     "floor": 645.0,
+     "ceiling": 720.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 598,
+       "counter": 706.0
+      },
+      {
+       "offer": 636,
+       "counter": 682.0
+      }
+     ]
+    },
+    {
+     "scenario": "n027",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1191,
+     "rounds": 2,
+     "ask": 1395.0,
+     "floor": 1179.0,
+     "ceiling": 1417.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1116,
+       "counter": 1330.0
+      }
+     ]
+    },
+    {
+     "scenario": "n028",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 586,
+     "rounds": 2,
+     "ask": 697.0,
+     "floor": 568.0,
+     "ceiling": 791.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 558,
+       "counter": 639.0
+      }
+     ]
+    },
+    {
+     "scenario": "n029",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1351,
+     "rounds": 3,
+     "ask": 1542.0,
+     "floor": 1342.0,
+     "ceiling": 1371.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1165,
+       "counter": 1506.0
+      },
+      {
+       "offer": 1284,
+       "counter": 1476.0
+      }
+     ]
+    },
+    {
+     "scenario": "n030",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1095.0,
+     "floor": 1002.0,
+     "ceiling": 1143.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 876,
+       "counter": 1058.0
+      },
+      {
+       "offer": 940,
+       "counter": 1036.0
+      }
+     ]
+    },
+    {
+     "scenario": "n031",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 996,
+     "rounds": 2,
+     "ask": 1167.0,
+     "floor": 977.0,
+     "ceiling": 1131.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 934,
+       "counter": 1110.0
+      }
+     ]
+    },
+    {
+     "scenario": "n032",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1751.0,
+     "rounds": 5,
+     "ask": 1922.0,
+     "floor": 1734.0,
+     "ceiling": 2163.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1538,
+       "counter": 1837.0
+      },
+      {
+       "offer": 1643,
+       "counter": 1791.0
+      },
+      {
+       "offer": 1695,
+       "counter": 1765.0
+      },
+      {
+       "offer": 1720,
+       "counter": 1751.0
+      }
+     ]
+    },
+    {
+     "scenario": "n033",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 1696.0,
+     "floor": 1524.0,
+     "ceiling": 1490.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1266,
+       "counter": 1665.0
+      },
+      {
+       "offer": 1406,
+       "counter": 1640.0
+      },
+      {
+       "offer": 1488,
+       "counter": 1619.0
+      },
+      {
+       "offer": 1490,
+       "counter": 1602.0
+      }
+     ]
+    },
+    {
+     "scenario": "n034",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 700.0,
+     "floor": 638.0,
+     "ceiling": 724.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 560,
+       "counter": 675.0
+      },
+      {
+       "offer": 600,
+       "counter": 660.0
+      }
+     ]
+    },
+    {
+     "scenario": "n035",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1223.0,
+     "floor": 1043.0,
+     "ceiling": 958.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n036",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1877.0,
+     "floor": 1742.0,
+     "ceiling": 1446.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1229,
+       "counter": 1816.0
+      },
+      {
+       "offer": 1434,
+       "counter": 1783.0
+      },
+      {
+       "offer": 1446,
+       "counter": 1765.0
+      }
+     ]
+    },
+    {
+     "scenario": "n037",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1630.0,
+     "floor": 1463.0,
+     "ceiling": 1378.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1171,
+       "counter": 1600.0
+      },
+      {
+       "offer": 1321,
+       "counter": 1575.0
+      },
+      {
+       "offer": 1378,
+       "counter": 1555.0
+      }
+     ]
+    },
+    {
+     "scenario": "n038",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1164,
+     "rounds": 2,
+     "ask": 1375.0,
+     "floor": 1146.0,
+     "ceiling": 1364.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1100,
+       "counter": 1283.0
+      }
+     ]
+    },
+    {
+     "scenario": "n039",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 438.0,
+     "floor": 388.0,
+     "ceiling": 383.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n040",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 602.0,
+     "rounds": 5,
+     "ask": 660.0,
+     "floor": 597.0,
+     "ceiling": 673.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 528,
+       "counter": 632.0
+      },
+      {
+       "offer": 564,
+       "counter": 616.0
+      },
+      {
+       "offer": 582,
+       "counter": 607.0
+      },
+      {
+       "offer": 591,
+       "counter": 602.0
+      }
+     ]
+    },
+    {
+     "scenario": "n041",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1911,
+     "rounds": 3,
+     "ask": 2356.0,
+     "floor": 1885.0,
+     "ceiling": 1911.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1624,
+       "counter": 2271.0
+      },
+      {
+       "offer": 1850,
+       "counter": 2202.0
+      }
+     ]
+    },
+    {
+     "scenario": "n042",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1606.0,
+     "floor": 1480.0,
+     "ceiling": 1585.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1285,
+       "counter": 1556.0
+      },
+      {
+       "offer": 1380,
+       "counter": 1526.0
+      }
+     ]
+    },
+    {
+     "scenario": "n043",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 465.0,
+     "floor": 416.0,
+     "ceiling": 346.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n044",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 5,
+     "ask": 1214.0,
+     "floor": 1095.0,
+     "ceiling": 1097.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 932,
+       "counter": 1160.0
+      },
+      {
+       "offer": 1012,
+       "counter": 1131.0
+      },
+      {
+       "offer": 1054,
+       "counter": 1115.0
+      },
+      {
+       "offer": 1075,
+       "counter": 1106.0
+      },
+      {
+       "offer": 1086,
+       "counter": 1101.0
+      }
+     ]
+    },
+    {
+     "scenario": "n045",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1419.0,
+     "floor": 1344.0,
+     "ceiling": 1256.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1068,
+       "counter": 1406.0
+      },
+      {
+       "offer": 1186,
+       "counter": 1395.0
+      },
+      {
+       "offer": 1256,
+       "counter": 1386.0
+      }
+     ]
+    },
+    {
+     "scenario": "n046",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 910,
+     "rounds": 3,
+     "ask": 1096.0,
+     "floor": 909.0,
+     "ceiling": 937.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 796,
+       "counter": 1021.0
+      },
+      {
+       "offer": 875,
+       "counter": 976.0
+      }
+     ]
+    },
+    {
+     "scenario": "n047",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1163.0,
+     "floor": 1000.0,
+     "ceiling": 895.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n048",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 1970.0,
+     "floor": 1610.0,
+     "ceiling": 1591.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1352,
+       "counter": 1808.0
+      },
+      {
+       "offer": 1512,
+       "counter": 1719.0
+      },
+      {
+       "offer": 1584,
+       "counter": 1670.0
+      },
+      {
+       "offer": 1591,
+       "counter": 1643.0
+      }
+     ]
+    },
+    {
+     "scenario": "n049",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 1421.0,
+     "floor": 1318.0,
+     "ceiling": 1302.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1107,
+       "counter": 1402.0
+      },
+      {
+       "offer": 1210,
+       "counter": 1387.0
+      },
+      {
+       "offer": 1272,
+       "counter": 1375.0
+      },
+      {
+       "offer": 1302,
+       "counter": 1365.0
+      }
+     ]
+    },
+    {
+     "scenario": "n050",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1527.0,
+     "floor": 1438.0,
+     "ceiling": 1488.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1222,
+       "counter": 1491.0
+      },
+      {
+       "offer": 1316,
+       "counter": 1470.0
+      }
+     ]
+    },
+    {
+     "scenario": "n051",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 942.0,
+     "floor": 839.0,
+     "ceiling": 767.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n052",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1889.0,
+     "rounds": 5,
+     "ask": 2119.0,
+     "floor": 1866.0,
+     "ceiling": 1890.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1606,
+       "counter": 2005.0
+      },
+      {
+       "offer": 1746,
+       "counter": 1942.0
+      },
+      {
+       "offer": 1815,
+       "counter": 1908.0
+      },
+      {
+       "offer": 1848,
+       "counter": 1889.0
+      }
+     ]
+    },
+    {
+     "scenario": "n053",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1214,
+     "rounds": 2,
+     "ask": 1411.0,
+     "floor": 1199.0,
+     "ceiling": 1496.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1129,
+       "counter": 1373.0
+      }
+     ]
+    },
+    {
+     "scenario": "n054",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 920,
+     "rounds": 3,
+     "ask": 1130.0,
+     "floor": 911.0,
+     "ceiling": 937.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 796,
+       "counter": 1042.0
+      },
+      {
+       "offer": 882,
+       "counter": 990.0
+      }
+     ]
+    },
+    {
+     "scenario": "n055",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1871.0,
+     "floor": 1533.0,
+     "ceiling": 1404.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n056",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1394.0,
+     "rounds": 5,
+     "ask": 1491.0,
+     "floor": 1384.0,
+     "ceiling": 1496.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1193,
+       "counter": 1443.0
+      },
+      {
+       "offer": 1280,
+       "counter": 1416.0
+      },
+      {
+       "offer": 1328,
+       "counter": 1402.0
+      },
+      {
+       "offer": 1354,
+       "counter": 1394.0
+      }
+     ]
+    },
+    {
+     "scenario": "n057",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1394,
+     "rounds": 3,
+     "ask": 1597.0,
+     "floor": 1377.0,
+     "ceiling": 1410.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1198,
+       "counter": 1557.0
+      },
+      {
+       "offer": 1324,
+       "counter": 1525.0
+      }
+     ]
+    },
+    {
+     "scenario": "n058",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 2318.0,
+     "floor": 2194.0,
+     "ceiling": 1886.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1603,
+       "counter": 2268.0
+      },
+      {
+       "offer": 1836,
+       "counter": 2238.0
+      }
+     ]
+    },
+    {
+     "scenario": "n059",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1991.0,
+     "floor": 1604.0,
+     "ceiling": 1761.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n060",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1101,
+     "rounds": 3,
+     "ask": 1272.0,
+     "floor": 1089.0,
+     "ceiling": 1226.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1018,
+       "counter": 1190.0
+      },
+      {
+       "offer": 1078,
+       "counter": 1145.0
+      }
+     ]
+    },
+    {
+     "scenario": "n061",
+     "personality": "firm",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 855,
+     "rounds": 4,
+     "ask": 928.0,
+     "floor": 847.0,
+     "ceiling": 871.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 740,
+       "counter": 913.0
+      },
+      {
+       "offer": 801,
+       "counter": 901.0
+      },
+      {
+       "offer": 836,
+       "counter": 891.0
+      }
+     ]
+    },
+    {
+     "scenario": "n062",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 633,
+     "rounds": 2,
+     "ask": 746.0,
+     "floor": 629.0,
+     "ceiling": 725.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 597,
+       "counter": 699.0
+      }
+     ]
+    },
+    {
+     "scenario": "n063",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1388.0,
+     "floor": 1316.0,
+     "ceiling": 1253.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n064",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 916,
+     "rounds": 2,
+     "ask": 1091.0,
+     "floor": 883.0,
+     "ceiling": 1106.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 873,
+       "counter": 997.0
+      }
+     ]
+    },
+    {
+     "scenario": "n065",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 838.0,
+     "floor": 755.0,
+     "ceiling": 719.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 611,
+       "counter": 823.0
+      },
+      {
+       "offer": 685,
+       "counter": 811.0
+      },
+      {
+       "offer": 719,
+       "counter": 801.0
+      }
+     ]
+    },
+    {
+     "scenario": "n066",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 432.0,
+     "floor": 410.0,
+     "ceiling": 402.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 342,
+       "counter": 423.0
+      },
+      {
+       "offer": 370,
+       "counter": 418.0
+      }
+     ]
+    },
+    {
+     "scenario": "n067",
+     "personality": "proud",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 901,
+     "rounds": 2,
+     "ask": 1054.0,
+     "floor": 900.0,
+     "ceiling": 1034.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 843,
+       "counter": 1008.0
+      }
+     ]
+    },
+    {
+     "scenario": "n068",
+     "personality": "flexible",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 1380.0,
+     "floor": 1135.0,
+     "ceiling": 1099.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 934,
+       "counter": 1270.0
+      },
+      {
+       "offer": 1052,
+       "counter": 1209.0
+      },
+      {
+       "offer": 1099,
+       "counter": 1176.0
+      }
+     ]
+    },
+    {
+     "scenario": "n069",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 464.0,
+     "floor": 435.0,
+     "ceiling": 410.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 348,
+       "counter": 459.0
+      },
+      {
+       "offer": 387,
+       "counter": 455.0
+      },
+      {
+       "offer": 410,
+       "counter": 451.0
+      }
+     ]
+    },
+    {
+     "scenario": "n070",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 2410.0,
+     "floor": 2244.0,
+     "ceiling": 2143.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 1822,
+       "counter": 2344.0
+      },
+      {
+       "offer": 2005,
+       "counter": 2304.0
+      }
+     ]
+    },
+    {
+     "scenario": "n071",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1401.0,
+     "floor": 1278.0,
+     "ceiling": 1172.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n072",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1180,
+     "rounds": 2,
+     "ask": 1397.0,
+     "floor": 1171.0,
+     "ceiling": 1480.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 1118,
+       "counter": 1295.0
+      }
+     ]
+    },
+    {
+     "scenario": "n073",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 3,
+     "ask": 467.0,
+     "floor": 430.0,
+     "ceiling": 370.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 314,
+       "counter": 460.0
+      },
+      {
+       "offer": 365,
+       "counter": 455.0
+      },
+      {
+       "offer": 370,
+       "counter": 450.0
+      }
+     ]
+    },
+    {
+     "scenario": "n074",
+     "personality": "flaky",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1254.0,
+     "floor": 1016.0,
+     "ceiling": 960.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 816,
+       "counter": 1159.0
+      },
+      {
+       "offer": 936,
+       "counter": 1102.0
+      }
+     ]
+    },
+    {
+     "scenario": "n075",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 1694.0,
+     "floor": 1439.0,
+     "ceiling": 1328.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    },
+    {
+     "scenario": "n076",
+     "personality": "flexible",
+     "winnable": true,
+     "outcome": "deal",
+     "price": 1042,
+     "rounds": 4,
+     "ask": 1209.0,
+     "floor": 1035.0,
+     "ceiling": 1090.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 926,
+       "counter": 1131.0
+      },
+      {
+       "offer": 998,
+       "counter": 1088.0
+      },
+      {
+       "offer": 1030,
+       "counter": 1064.0
+      }
+     ]
+    },
+    {
+     "scenario": "n077",
+     "personality": "firm",
+     "winnable": false,
+     "outcome": "walked",
+     "price": null,
+     "rounds": 4,
+     "ask": 840.0,
+     "floor": 773.0,
+     "ceiling": 769.0,
+     "violations": [],
+     "why": null,
+     "history": [
+      {
+       "offer": 654,
+       "counter": 828.0
+      },
+      {
+       "offer": 715,
+       "counter": 818.0
+      },
+      {
+       "offer": 751,
+       "counter": 810.0
+      },
+      {
+       "offer": 769,
+       "counter": 803.0
+      }
+     ]
+    },
+    {
+     "scenario": "n078",
+     "personality": "flaky",
+     "winnable": true,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 2,
+     "ask": 1302.0,
+     "floor": 1082.0,
+     "ceiling": 1082.0,
+     "violations": [],
+     "why": "ran out of patience",
+     "history": [
+      {
+       "offer": 920,
+       "counter": 1214.0
+      },
+      {
+       "offer": 1023,
+       "counter": 1161.0
+      }
+     ]
+    },
+    {
+     "scenario": "n079",
+     "personality": "proud",
+     "winnable": false,
+     "outcome": "hung_up",
+     "price": null,
+     "rounds": 0,
+     "ask": 459.0,
+     "floor": 422.0,
+     "ceiling": 412.0,
+     "violations": [],
+     "why": "insulted by the opening offer",
+     "history": []
+    }
+   ]
+  }
+ },
+ "parsing": {
+  "keyword": {
+   "description": "First keyword that matches wins. No negation, no ETA parsing.",
+   "dev": {
+    "messages": 48,
+    "accuracy": 0.521,
+    "macro_f1": 0.531,
+    "eta_within_1h": 0.0,
+    "needs_human_recall": 0.0,
+    "false_alarms": 0,
+    "per_class": {
+     "picked_up": {
+      "precision": 0.667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 4
+     },
+     "moving": {
+      "precision": 0.36,
+      "recall": 0.692,
+      "f1": 0.474,
+      "support": 13
+     },
+     "delayed": {
+      "precision": 0.714,
+      "recall": 0.417,
+      "f1": 0.526,
+      "support": 12
+     },
+     "delivered": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "support": 6
+     },
+     "issue": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 8
+     },
+     "none": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.889,
+      "support": 5
+     }
+    },
+    "confusion": {
+     "picked_up": {
+      "picked_up": 4
+     },
+     "moving": {
+      "moving": 9,
+      "delayed": 2,
+      "delivered": 2
+     },
+     "delayed": {
+      "delayed": 5,
+      "moving": 5,
+      "picked_up": 2
+     },
+     "delivered": {
+      "delivered": 3,
+      "moving": 3
+     },
+     "issue": {
+      "moving": 7,
+      "delivered": 1
+     },
+     "none": {
+      "none": 4,
+      "moving": 1
+     }
+    },
+    "misses": [
+     {
+      "id": "t10",
+      "text": "not delayed, traffic cleared up",
+      "expected": "moving",
+      "got": "delayed"
+     },
+     {
+      "id": "t12",
+      "text": "will be delivered tomorrow morning",
+      "expected": "moving",
+      "got": "delivered"
+     },
+     {
+      "id": "t17",
+      "text": "snow in the pass, chains required. gonna lose a day",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "t18",
+      "text": "hit my hours, have to take my 10 before I can finish",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "t19",
+      "text": "can't pick up till monday, dealer lot is closed",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "t21",
+      "text": "truck broke down outside Tulsa, waiting on a mechanic",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "t22",
+      "text": "accident on the highway, stuck in traffic for a while",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "t26",
+      "text": "left it with the porter at service, keys in the drop box",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "t27",
+      "text": "done. car is on their lot",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "t28",
+      "text": "small scratch on the rear bumper, noted it on the BOL at pickup",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t29",
+      "text": "dealer won't sign, says there's a chip in the windshield",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t30",
+      "text": "battery is dead, can't get it off the trailer",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t31",
+      "text": "nobody at the dealership to receive, what do you want me to do",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t32",
+      "text": "vin on the paperwork doesnt match the car",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t33",
+      "text": "customer says this isn't the right trim, refusing delivery",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t34",
+      "text": "low clearance, the front lip scraped loading. sending pics",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "t37",
+      "text": "call me",
+      "expected": "none",
+      "got": "moving"
+     },
+     {
+      "id": "t41",
+      "text": "picked up the escalade but the dealer was late so we're behind now",
+      "expected": "delayed",
+      "got": "picked_up"
+     },
+     {
+      "id": "t42",
+      "text": "should've delivered by now but the gate code doesn't work",
+      "expected": "issue",
+      "got": "delivered"
+     },
+     {
+      "id": "t45",
+      "text": "not loaded yet, waiting on the dealer to bring it around",
+      "expected": "delayed",
+      "got": "picked_up"
+     },
+     {
+      "id": "t46",
+      "text": "delivered the first two, yours is next. 30 min",
+      "expected": "moving",
+      "got": "delivered"
+     },
+     {
+      "id": "t47",
+      "text": "roads are clear, no delays expected",
+      "expected": "moving",
+      "got": "delayed"
+     },
+     {
+      "id": "t48",
+      "text": "rolled it off, dealer has it. no issues",
+      "expected": "delivered",
+      "got": "moving"
+     }
+    ]
+   },
+   "heldout": {
+    "messages": 20,
+    "accuracy": 0.3,
+    "macro_f1": 0.23,
+    "eta_within_1h": 0.0,
+    "needs_human_recall": 0.0,
+    "false_alarms": 0,
+    "per_class": {
+     "picked_up": {
+      "precision": 0.5,
+      "recall": 0.333,
+      "f1": 0.4,
+      "support": 3
+     },
+     "moving": {
+      "precision": 0.2,
+      "recall": 0.75,
+      "f1": 0.316,
+      "support": 4
+     },
+     "delayed": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.333,
+      "support": 5
+     },
+     "delivered": {
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.333,
+      "support": 4
+     },
+     "issue": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+     },
+     "none": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+     }
+    },
+    "confusion": {
+     "picked_up": {
+      "moving": 2,
+      "picked_up": 1
+     },
+     "moving": {
+      "moving": 3,
+      "delivered": 1
+     },
+     "delayed": {
+      "moving": 4,
+      "delayed": 1
+     },
+     "delivered": {
+      "moving": 2,
+      "delivered": 1,
+      "picked_up": 1
+     },
+     "issue": {
+      "moving": 3
+     },
+     "none": {
+      "moving": 1
+     }
+    },
+    "misses": [
+     {
+      "id": "h01",
+      "text": "vehicle secured on top rack, departing now",
+      "expected": "picked_up",
+      "got": "moving"
+     },
+     {
+      "id": "h03",
+      "text": "flat on the tractor, roadside service 90 min out",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h04",
+      "text": "construction backup on 75, crawling",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h05",
+      "text": "handed keys to the sales manager, all set",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "h06",
+      "text": "dealer accepted the unit",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "h07",
+      "text": "mirror cracked, not sure if it happened before pickup",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "h08",
+      "text": "the address you gave me is a house not a dealership",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "h11",
+      "text": "gonna be delivered in like 20 min",
+      "expected": "moving",
+      "got": "delivered"
+     },
+     {
+      "id": "h15",
+      "text": "had to reroute, adds about 3 hrs",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h16",
+      "text": "customer not answering phone, I'm at the gate",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "h17",
+      "text": "ok will do",
+      "expected": "none",
+      "got": "moving"
+     },
+     {
+      "id": "h18",
+      "text": "loading now",
+      "expected": "picked_up",
+      "got": "moving"
+     },
+     {
+      "id": "h19",
+      "text": "wreck ahead, we're stopped",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h20",
+      "text": "unloaded at the dealer, no damage",
+      "expected": "delivered",
+      "got": "picked_up"
+     }
+    ]
+   }
+  },
+  "rules": {
+   "description": "Ordered rules with negation, tense and ETA handling.",
+   "dev": {
+    "messages": 48,
+    "accuracy": 0.979,
+    "macro_f1": 0.983,
+    "eta_within_1h": 1.0,
+    "needs_human_recall": 1.0,
+    "false_alarms": 1,
+    "per_class": {
+     "picked_up": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
+     },
+     "moving": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 13
+     },
+     "delayed": {
+      "precision": 1.0,
+      "recall": 0.917,
+      "f1": 0.957,
+      "support": 12
+     },
+     "delivered": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+     },
+     "issue": {
+      "precision": 0.889,
+      "recall": 1.0,
+      "f1": 0.941,
+      "support": 8
+     },
+     "none": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 5
+     }
+    },
+    "confusion": {
+     "picked_up": {
+      "picked_up": 4
+     },
+     "moving": {
+      "moving": 13
+     },
+     "delayed": {
+      "delayed": 11,
+      "issue": 1
+     },
+     "delivered": {
+      "delivered": 6
+     },
+     "issue": {
+      "issue": 8
+     },
+     "none": {
+      "none": 5
+     }
+    },
+    "misses": [
+     {
+      "id": "t22",
+      "text": "accident on the highway, stuck in traffic for a while",
+      "expected": "delayed",
+      "got": "issue"
+     }
+    ]
+   },
+   "heldout": {
+    "messages": 20,
+    "accuracy": 0.3,
+    "macro_f1": 0.186,
+    "eta_within_1h": 1.0,
+    "needs_human_recall": 0.0,
+    "false_alarms": 0,
+    "per_class": {
+     "picked_up": {
+      "precision": 0.5,
+      "recall": 0.333,
+      "f1": 0.4,
+      "support": 3
+     },
+     "moving": {
+      "precision": 0.235,
+      "recall": 1.0,
+      "f1": 0.381,
+      "support": 4
+     },
+     "delayed": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.333,
+      "support": 5
+     },
+     "delivered": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+     },
+     "issue": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+     },
+     "none": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+     }
+    },
+    "confusion": {
+     "picked_up": {
+      "moving": 2,
+      "picked_up": 1
+     },
+     "moving": {
+      "moving": 4
+     },
+     "delayed": {
+      "moving": 4,
+      "delayed": 1
+     },
+     "delivered": {
+      "moving": 3,
+      "picked_up": 1
+     },
+     "issue": {
+      "moving": 3
+     },
+     "none": {
+      "moving": 1
+     }
+    },
+    "misses": [
+     {
+      "id": "h01",
+      "text": "vehicle secured on top rack, departing now",
+      "expected": "picked_up",
+      "got": "moving"
+     },
+     {
+      "id": "h03",
+      "text": "flat on the tractor, roadside service 90 min out",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h04",
+      "text": "construction backup on 75, crawling",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h05",
+      "text": "handed keys to the sales manager, all set",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "h06",
+      "text": "dealer accepted the unit",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "h07",
+      "text": "mirror cracked, not sure if it happened before pickup",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "h08",
+      "text": "the address you gave me is a house not a dealership",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "h14",
+      "text": "drop complete, BOL signed",
+      "expected": "delivered",
+      "got": "moving"
+     },
+     {
+      "id": "h15",
+      "text": "had to reroute, adds about 3 hrs",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h16",
+      "text": "customer not answering phone, I'm at the gate",
+      "expected": "issue",
+      "got": "moving"
+     },
+     {
+      "id": "h17",
+      "text": "ok will do",
+      "expected": "none",
+      "got": "moving"
+     },
+     {
+      "id": "h18",
+      "text": "loading now",
+      "expected": "picked_up",
+      "got": "moving"
+     },
+     {
+      "id": "h19",
+      "text": "wreck ahead, we're stopped",
+      "expected": "delayed",
+      "got": "moving"
+     },
+     {
+      "id": "h20",
+      "text": "unloaded at the dealer, no damage",
+      "expected": "delivered",
+      "got": "picked_up"
+     }
+    ]
+   }
+  }
+ }
+}
